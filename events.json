@@ -3,7 +3,7 @@
   "date": "01-02-2026", 
   "heure": "15:00", 
   "lieu": "Cabestany", 
-  "Salle" : "Centre Culturel",
+  "salle" : "Centre Culturel",
   "cobla": "Mil.lenaria et Casenoves", 
   "type": "Aplec" 
 }
