@@ -9,6 +9,19 @@
     <h2>Prochains événements</h2> 
     <ul id="liste-sardanes"></ul>
       <script> 
-        fetch("events.json") .then(response => response.json()) .then(data => { const liste = document.getElementById("liste-sardanes"); data.sort((a, b) => new Date(a.date) - new Date(b.date)); data.forEach(event => { const item = document.createElement("li"); item.textContent = `${event.date} — ${event.heure} — ${event.lieu} — ${event.cobla} — ${event.type}`; liste.appendChild(item); }); }) .catch(error => { console.error("Erreur de chargement :", error); }); </script>
+        fetch("events.json") 
+          .then(response => response.json()) 
+          .then(data => { 
+                  const liste = document.getElementById("liste-sardanes"); 
+                  data.sort((a, b) => new Date(a.date) - new Date(b.date)); 
+                  data.forEach(event => { const item = document.createElement("li"); 
+                                        item.textContent =
+                                          `${event.date} — ${event.heure} — ${event.lieu} — ${event.cobla} — ${event.type}`; 
+                                         liste.appendChild(item);
+                                        }); 
+          }) 
+          .catch(error => { 
+            console.error("Erreur de chargement :", error); }); 
+      </script>
   </body> 
 </html>
