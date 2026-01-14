@@ -9,6 +9,7 @@
     <h2>Prochains événements</h2> 
     <ul id="liste-sardanes"></ul>
       <script> 
+        console.log("SCRIPT OK");
         fetch("./events.json")
           .then(response => response.json()) 
           .then(data => { 
