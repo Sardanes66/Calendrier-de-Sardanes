@@ -36,27 +36,28 @@
         font-size: 0.85em; 
         margin-top: 6px; } </style>
   </head> 
-  <body> <h1>Bienvenue sur le Calendrier des Sardanes du 66</h1> 
-    <p>Site en construction…</p> 
-    <h2>Prochains événements</h2> 
-    <ul id="liste-sardanes"></ul>
-      <script> 
-        console.log("VERSION 2 DU SCRIPT");
-        function formatDateFR(dateStr) { const date = new Date(dateStr); return date.toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" }); }
-      fetch("./events.json?nocache=" + Date.now()) 
-        .then(response => response.json()) 
-        .then(data => { 
-          const liste = document.getElementById("liste-sardanes"); 
-          data.sort((a, b) => new Date(a.date) - new Date(b.date)); 
-          data.forEach(event => { 
-              const item = document.createElement("li"); 
-              item.className = "event-card"; 
-              item.innerHTML = ` 
-                <div class="event-date">📅 ${event.date} — ${event.heure}</div> 
-                <div class="event-lieu">📍 <strong>${event.lieu}</strong></div> 
-                <div class="event-salle">🏛️ ${event.salle}</div>
-                <div class="event-cobla">🎼 ${event.cobla}</div> 
-                <div class="event-type">🏷️ ${event.type}</div> 
+  
+        <body> <h1>Bienvenue sur le Calendrier des Sardanes du 66</h1> 
+        <p>Site en construction…</p> 
+        <h2>Prochains événements</h2> 
+        <ul id="liste-sardanes"></ul>
+              <script> 
+              console.log("VERSION 2 DU SCRIPT");
+              function formatDateFR(dateStr) { const date = new Date(dateStr); return date.toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" }); }
+              fetch("./events.json?nocache=" + Date.now()) 
+              .then(response => response.json()) 
+              .then(data => { 
+                const liste = document.getElementById("liste-sardanes"); 
+                data.sort((a, b) => new Date(a.date) - new Date(b.date)); 
+                data.forEach(event => { 
+                const item = document.createElement("li"); 
+                item.className = "event-card"; 
+                item.innerHTML = ` 
+                        <div class="event-date">📅 ${event.date} — ${event.heure}</div> 
+                        <div class="event-lieu">📍 <strong>${event.lieu}</strong></div> 
+                        <div class="event-salle">🏛️ ${event.salle}</div>
+                        <div class="event-cobla">🎼 ${event.cobla}</div> 
+                        <div class="event-type">🏷️ ${event.type}</div> 
                 `; 
             liste.appendChild(item);
           });
