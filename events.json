@@ -11,10 +11,19 @@
 { 
   "date": "01-02-2026", 
   "heure": "15:00", 
-  "lieu": "Cabestany", 
-  "salle" : "Centre Culturel",
+  "lieu": "Pezilla De La Rivière", 
+  "salle" : "non communiqué",
   "cobla": "Mil.lenaria et Casenoves", 
   "type": "Aplec" ,
   "tarif": "7€"
+},
+  { 
+  "date": "01-02-2026", 
+  "heure": "matin", 
+  "lieu": "Cabestany", 
+  "salle" : "Centre Culturel",
+  "cobla": "Mil.lenaria et Casenoves", 
+  "type": "ballada" ,
+  "tarif": "non communiqué"
 }
 ]
