@@ -77,14 +77,19 @@
 <footer style="margin-top:40px; padding:15px; background:#f2d9e6; border-radius:8px; text-align:center; font-family:sans-serif; color:#333;"> 
   📬 Pour me contacter : 
   <a href="mailto:cuscullets@sfr.fr" style="font-size:1.4em; font-weight:bold; color:#333;"> cuscullets@sfr.fr </a> 
-  <div style="margin-top:10px; font-size:0.9em;"> 
-    👀 Visiteurs : <span id="visits"></span> 
-  </div> 
-  <script> 
-    fetch('https://api.countapi.xyz/hit/calendrier-sardanes-66/visites') 
+  <div style="margin-top:15px; font-size:0.95em;"> 
+    👀 Nombre de sisites aujourd’hui : <span id="visits-today"></span><br> 📈 Visites totales : <span id="visits-total"></span> </div> 
+  <script> // Identifiants uniques pour ton site 
+    const TOTAL_KEY = "calendrier-sardanes-66-total"; 
+    const DAILY_KEY = "calendrier-sardanes-66-daily-" + new Date().toISOString().slice(0,10); 
+    // Compteur total 
+    fetch(`https://api.countapi.xyz/hit/${TOTAL_KEY}/visites`) 
       .then(r => r.json()) 
-      .then(d => { document.getElementById('visits').innerText = d.value;
-                 }); 
+      .then(d => { document.getElementById('visits-total').innerText = d.value; }); 
+    // Compteur du jour (clé différente chaque jour) 
+    fetch(`https://api.countapi.xyz/hit/${DAILY_KEY}/visites`) 
+      .then(r => r.json()) 
+      .then(d => { document.getElementById('visits-today').innerText = d.value; });
   </script> 
 </footer>
   </body> 
