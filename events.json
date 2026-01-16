@@ -53,6 +53,15 @@
   "type": "Aplec" ,
   "tarif": "7€"
 },
+     { 
+  "date": "01-02-2026", 
+  "heure": "15h", 
+  "lieu": " Reynés ", 
+  "salle" : "non communiqué",
+  "cobla": "Sol de Banuyls", 
+  "type": "Ballada" ,
+  "tarif": "non communiqué"
+},
    { 
   "date": "01-02-2026", 
   "heure": "10h / 15h", 
@@ -60,6 +69,24 @@
   "salle" : "non communiqué",
   "cobla": "Principal del Rossello", 
   "type": "non communiqué" ,
+  "tarif": "non communiqué"
+},
+    { 
+  "date": "08-02-2026", 
+  "heure": "10h " 
+  "lieu": " Saint Estève  ", 
+  "salle" : "non communiqué",
+  "cobla": "Sol de Banyuls", 
+  "type": "Procession, Messe et Sardanes" ,
+  "tarif": "non communiqué"
+}, 
+     { 
+  "date": "15-02-2026", 
+  "heure": "15h", 
+  "lieu": " Rivesaltes ", 
+  "salle" : "non communiqué",
+  "cobla": "Sol de Banuyls", 
+  "type": "Ballada" ,
   "tarif": "non communiqué"
 },
   { 
