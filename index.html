@@ -77,23 +77,24 @@
                   "Tres Vents": "https://www.coblatresvents.cat", 
                   "Mil·lenària": "https://www.coblamillenaria.cat", 
                   "Ciutat de Girona": "https://www.coblagirona.cat" };
-      </script>
-<footer style="margin-top:40px; padding:15px; background:#f2d9e6; border-radius:8px; text-align:center; font-family:sans-serif; color:#333;"> 
-  📬 Pour me contacter : 
-  <a href="mailto:cuscullets@sfr.fr" style="font-size:1.4em; font-weight:bold; color:#333;"> cuscullets@sfr.fr </a> 
+<footer style="margin-top:40px; padding:15px; background:#f2d9e6; border-radius:8px;
+text-align:center; font-family:sans-serif; color:#333;"> 
+   Pour me contacter : 
+  <a href="mailto:cuscullets@sfr.fr" style="font-size:1.4em; font-weight:bold;
+color:#333;"> cuscullets@sfr.fr </a> 
   <div style="margin-top:15px; font-size:0.95em;"> 
-    👀 Nombre de sisites aujourd’hui : <span id="visits-today"></span><br> 📈 Visites totales : <span id="visits-total"></span> </div> 
+     Nombre de visites aujourdhui : <span id="visits-today"></span><br>  Visites totales
+: <span id="visits-total"></span> </div> 
   <script> // Identifiants uniques pour ton site 
-    const TOTAL_KEY = "calendrier-sardanes-66-total"; 
-    const DAILY_KEY = "calendrier-sardanes-66-daily-" + new Date().toISOString().slice(0,10); 
-    // Compteur total 
-    fetch(`https://api.countapi.xyz/hit/${TOTAL_KEY}/visites`) 
+    const NAMESPACE = "calendrier-sardanes-66"; 
+    const TOTAL_KEY = "total"; 
+    const DAILY_KEY = "daily-" + new Date().toISOString().slice(0,10); 
+    fetch(`https://api.countapi.xyz/hit/${NAMESPACE}/${TOTAL_KEY}`) 
       .then(r => r.json()) 
       .then(d => { document.getElementById('visits-total').innerText = d.value; }); 
-    // Compteur du jour (clé différente chaque jour) 
-    fetch(`https://api.countapi.xyz/hit/${DAILY_KEY}/visites`) 
+    fetch(`https://api.countapi.xyz/hit/${NAMESPACE}/${DAILY_KEY}`) 
       .then(r => r.json()) 
-      .then(d => { document.getElementById('visits-today').innerText = d.value; });
+      .then(d => { document.getElementById('visits-today').innerText = d.value; }); 
   </script> 
 </footer>
          
