@@ -112,17 +112,20 @@ color:#333;">cuscullets@sfr.fr</a>
     Nombre de visites aujourd'hui : <span id="visits-today"></span><br>
     Visites totales : <span id="visits-total"></span>
   </div>
-  <script>
-    const NAMESPACE = "calendrier-sardanes-66";
-    const TOTAL_KEY = "total";
-    const DAILY_KEY = "daily-" + new Date().toISOString().slice(0,10);
-    fetch(`https://api.countapi.xyz/hit/${NAMESPACE}/${TOTAL_KEY}`)
-      .then(r => r.json())
-      .then(d => { document.getElementById('visits-total').innerText = d.value; });
-    fetch(`https://api.countapi.xyz/hit/${NAMESPACE}/${DAILY_KEY}`)
-      .then(r => r.json())
-      .then(d => { document.getElementById('visits-today').innerText = d.value; });
-  </script>
+<script>
+  const TOTAL_KEY = "visites_total";
+  const DAILY_KEY = "visites_" + new Date().toISOString().slice(0,10);
+  let total = localStorage.getItem(TOTAL_KEY);
+  let daily = localStorage.getItem(DAILY_KEY);
+  total = total ? parseInt(total) : 0;
+  daily = daily ? parseInt(daily) : 0;
+  total += 1;
+  daily += 1;
+  localStorage.setItem(TOTAL_KEY, total);
+  localStorage.setItem(DAILY_KEY, daily);
+  document.getElementById("visits-total").innerText = total;
+  document.getElementById("visits-today").innerText = daily;
+</script>
 </footer>
 </body>
 </html>
