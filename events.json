@@ -39,6 +39,7 @@
   "tarif": "non communiqué"
          
 },
+     
    { 
   "date": "01-02-2026", 
   "heure": "matin", 
@@ -118,6 +119,95 @@
   "type": "non communiqué" ,
   "tarif": "non communiqué"
      
+},
+{ 
+  "date": "05-04-2026", 
+  "heure": "15h30", 
+  "lieu": " ST LAURENT DE LA SALANQUE ", 
+  "salle" : "non communiqué",
+  "cobla": "Tres vents", 
+  "type": "non communiqué" ,
+  "tarif": "non communiqué"
+},
+     { 
+  "date": "07-06-2026", 
+  "heure": "16h", 
+  "lieu": " Maureillas ", 
+  "salle" : "non communiqué",
+  "cobla": "Tres vents", 
+  "type": "ballada" ,
+  "tarif": "non communiqué"
+},
+     { 
+  "date": "14-06-2026", 
+  "heure": "10h30", 
+  "lieu": " Toulouges ", 
+  "salle" : "non communiqué",
+  "cobla": "Tres vents", 
+  "type": "Aplec" ,
+  "tarif": "non communiqué"
+},
+{ 
+  "date": "11-07-2026", 
+  "heure": "20h00", 
+  "lieu": " Banyuls sur mer ", 
+  "salle" : "non communiqué",
+  "cobla": "Tres vents", 
+  "type": "Animation plage" ,
+  "tarif": "non communiqué"
+},
+     { 
+  "date": "15-07-2026", 
+  "heure": "21h00", 
+  "lieu": " Saint Genis Des Fontaines ", 
+  "salle" : "non communiqué",
+  "cobla": "Tres vents", 
+  "type": "SARDANES I BALLS" ,
+  "tarif": "non communiqué"
+},
+      { 
+  "date": "02-08-2026", 
+  "heure": "11h00", 
+  "lieu": " Codalet ", 
+  "salle" : "non communiqué",
+  "cobla": "Tres vents", 
+  "type": "Festa Major" ,
+  "tarif": "non communiqué"
+},
+      { 
+  "date": "07-08-2026", 
+  "heure": "17h00", 
+  "lieu": " Cerbère ", 
+  "salle" : "non communiqué",
+  "cobla": "Tres vents", 
+  "type": "FESTA MAJOR SARDANES BAL FOLK TRAD" ,
+  "tarif": "non communiqué"
+},
+     { 
+  "date": "13-08-2026", 
+  "heure": "21h00", 
+  "lieu": " Banyuls Sur Mer ", 
+  "salle" : "non communiqué",
+  "cobla": "Tres vents", 
+  "type": "SARDANES I BALLS" ,
+  "tarif": "non communiqué"
+},
+     { 
+  "date": "03-10-2026", 
+  "heure": "16h00", 
+  "lieu": " Tournefeuille ", 
+  "salle" : "non communiqué",
+  "cobla": "Tres vents", 
+  "type": "BALLADA SARDANES BAL FOLK" ,
+  "tarif": "non communiqué"
+},
+     { 
+  "date": "07-11-2026", 
+  "heure": "21h00", 
+  "lieu": " Ceret ", 
+  "salle" : "non communiqué",
+  "cobla": "Tres vents", 
+  "type": "CONCERT DE COBLA" ,
+  "tarif": "non communiqué"
 }
-  
 ]
