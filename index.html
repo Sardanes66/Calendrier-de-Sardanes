@@ -87,6 +87,7 @@ fetch("./events.json?nocache=" + Date.now())
       item.className = "event-card";
       const dateObj = parseDate(event.date);
       item.innerHTML = `
+         <div class="event-jour"> jour : ${event.jour}</div>
         <div class="event-date"> date : ${formatDateFR(dateObj)} - ${event.heure}</div>
         <div class="event-lieu"> lieu : <strong>${event.lieu}</strong></div>
         <div class="event-salle"> salle : ${event.salle}</div>
