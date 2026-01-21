@@ -65,6 +65,10 @@ function formatDateFR(dateObj) {
     year: "numeric"
   });
 }
+  // Jour de la semaine FR 
+  function getJourSemaineFR(dateObj) { 
+    const jours = ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"]; 
+    return jours[dateObj.getDay()]; }
 // URLs des cobles
 const coblesURL = {
   "Tres Vents": "https://www.coblatresvents.cat",
@@ -87,7 +91,7 @@ fetch("./events.json?nocache=" + Date.now())
       item.className = "event-card";
       const dateObj = parseDate(event.date);
       item.innerHTML = `
-         <div class="event-jour"> jour : ${event.jour}</div>
+         <div class="event-jour"> jour : ${getJourSemaineFR(dateObj)}</div>
         <div class="event-date"> date : ${formatDateFR(dateObj)} - ${event.heure}</div>
         <div class="event-lieu"> lieu : <strong>${event.lieu}</strong></div>
         <div class="event-salle"> salle : ${event.salle}</div>
