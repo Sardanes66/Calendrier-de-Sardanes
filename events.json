@@ -1,6 +1,6 @@
 [
      { 
-  "date": "22-01-2026", 
+  "date": "jeudi-22-01-2026", 
   "heure": "10h / 16h30", 
   "lieu": " Reynes", 
   "salle" : "non communiqué",
@@ -10,7 +10,7 @@
  
 },
   { 
-  "date": "23-01-2026", 
+  "date": "vendredi-23-01-2026", 
   "heure": "17h45", 
   "lieu": " PERPIGNAN", 
   "salle" : "Palais des Rois de Marjorque",
@@ -20,7 +20,7 @@
 
 },
   { 
-  "date": "24-01-2026", 
+  "date": "Samedi-24-01-2026", 
   "heure": "15h", 
   "lieu": " CLAIRA", 
   "salle" : "non communiqué",
@@ -30,7 +30,7 @@
        
 },
     { 
-  "date": "25-01-2026", 
+  "date": "Dimanche-25-01-2026", 
   "heure": "11 / 15h30", 
   "lieu": " St JEAN PLA DE CORTS ", 
   "salle" : "non communiqué",
@@ -41,7 +41,7 @@
 },
      
    { 
-  "date": "01-02-2026", 
+  "date": "Dimanche-01-02-2026", 
   "heure": "matin", 
   "lieu": " Pezilla De La Rivière", 
   "salle" : "non communiqué",
@@ -51,7 +51,7 @@
     
 },
   { 
-  "date": "01-02-2026", 
+  "date": "Dimanche-01-02-2026", 
   "heure": "15h00", 
   "lieu": "Cabestany", 
   "salle" : "Centre Culturel",
@@ -61,7 +61,7 @@
        
 },
      { 
-  "date": "01-02-2026", 
+  "date": "Dimanche-01-02-2026", 
   "heure": "15h", 
   "lieu": " Reynés ", 
   "salle" : "non communiqué",
@@ -71,7 +71,7 @@
          
 },
    { 
-  "date": "01-02-2026", 
+  "date": "Dimanche-01-02-2026", 
   "heure": "10h / 15h", 
   "lieu": " ARLES SUR TECH ", 
   "salle" : "non communiqué",
@@ -81,7 +81,7 @@
        
 },
     { 
-  "date": "08-02-2026", 
+  "date": "Dimanche-08-02-2026", 
   "heure": "10h " ,
   "lieu": " Saint Estève  ", 
   "salle" : "non communiqué",
@@ -91,7 +91,7 @@
         
 }, 
      { 
-  "date": "15-02-2026", 
+  "date": "Dimanche-15-02-2026", 
   "heure": "15h", 
   "lieu": " Rivesaltes ", 
   "salle" : "non communiqué",
@@ -101,7 +101,7 @@
           
 },
   { 
-  "date": "22-02-2026", 
+  "date": "Dimanche-22-02-2026", 
   "heure": "15h", 
   "lieu": " St FELIU D'AVALL ", 
   "salle" : "non communiqué",
@@ -111,7 +111,7 @@
       
 },
  { 
-  "date": "01-03-2026", 
+  "date": "Dimanche-01-03-2026", 
   "heure": "10h / 15h", 
   "lieu": " St LAURENT DE CERDANS ", 
   "salle" : "non communiqué",
@@ -121,7 +121,7 @@
      
 },
 { 
-  "date": "05-04-2026", 
+  "date": "Jeudi-05-04-2026", 
   "heure": "15h30", 
   "lieu": " ST LAURENT DE LA SALANQUE ", 
   "salle" : "non communiqué",
@@ -130,7 +130,7 @@
   "tarif": "non communiqué"
 },
      { 
-  "date": "07-06-2026", 
+  "date": "Dimanche--07-06-2026", 
   "heure": "16h", 
   "lieu": " Maureillas ", 
   "salle" : "non communiqué",
@@ -139,7 +139,7 @@
   "tarif": "non communiqué"
 },
      { 
-  "date": "14-06-2026", 
+  "date": "Dimanche--14-06-2026", 
   "heure": "10h30", 
   "lieu": " Toulouges ", 
   "salle" : "non communiqué",
@@ -148,7 +148,7 @@
   "tarif": "non communiqué"
 },
 { 
-  "date": "11-07-2026", 
+  "date": "Samedi-11-07-2026", 
   "heure": "20h00", 
   "lieu": " Banyuls sur mer ", 
   "salle" : "non communiqué",
@@ -157,7 +157,7 @@
   "tarif": "non communiqué"
 },
      { 
-  "date": "15-07-2026", 
+  "date": "Mercredi-15-07-2026", 
   "heure": "21h00", 
   "lieu": " Saint Genis Des Fontaines ", 
   "salle" : "non communiqué",
@@ -166,7 +166,7 @@
   "tarif": "non communiqué"
 },
       { 
-  "date": "02-08-2026", 
+  "date": "Dimanche-02-08-2026", 
   "heure": "11h00", 
   "lieu": " Codalet ", 
   "salle" : "non communiqué",
@@ -175,7 +175,7 @@
   "tarif": "non communiqué"
 },
       { 
-  "date": "07-08-2026", 
+  "date": "Vendredi-07-08-2026", 
   "heure": "17h00", 
   "lieu": " Cerbère ", 
   "salle" : "non communiqué",
@@ -184,7 +184,7 @@
   "tarif": "non communiqué"
 },
      { 
-  "date": "13-08-2026", 
+  "date": "Jeudi-13-08-2026", 
   "heure": "21h00", 
   "lieu": " Banyuls Sur Mer ", 
   "salle" : "non communiqué",
@@ -193,7 +193,7 @@
   "tarif": "non communiqué"
 },
      { 
-  "date": "03-10-2026", 
+  "date": "Mardi-03-10-2026", 
   "heure": "16h00", 
   "lieu": " Tournefeuille ", 
   "salle" : "non communiqué",
@@ -202,7 +202,7 @@
   "tarif": "non communiqué"
 },
      { 
-  "date": "07-11-2026", 
+  "date": "Samedi-07-11-2026", 
   "heure": "21h00", 
   "lieu": " Ceret ", 
   "salle" : "non communiqué",
