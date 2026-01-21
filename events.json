@@ -2,7 +2,7 @@
      { 
   "jour": "jeudi",
   "date": "22-01-2026", 
-  "heure": "10h / 16h30", 
+  "heure": "12h / 16h30", 
   "lieu": " Reynes", 
   "salle" : "non communiqué",
   "cobla": "Principal del Rossello", 
@@ -15,7 +15,7 @@
   "date": "23-01-2026", 
   "heure": "17h45", 
   "lieu": " PERPIGNAN", 
-  "salle" : "Palais des Rois de Marjorque",
+  "salle" : "Palais des Rois des rois de Mallorca",
   "cobla": "Principal del Rossello", 
   "type": "non communiqué" ,
   "tarif": "non communiqué"
@@ -28,7 +28,7 @@
   "lieu": " CLAIRA", 
   "salle" : "non communiqué",
   "cobla": "Principal del Rossello", 
-  "type": "non communiqué" ,
+  "type": "Ballada" ,
   "tarif": "non communiqué"
        
 },
