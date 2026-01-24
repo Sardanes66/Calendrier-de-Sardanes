@@ -3,44 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <title>Calendrier des Sardanes-test</title>
-  <style>
-    body {
-      background-color: #ffe6f2;
-    }
-    #liste-sardanes {
-      list-style: none;
-      padding: 0;
-    }
-    .event-card {
-      background: #f7f7f7;
-      border-radius: 8px;
-      padding: 12px 16px;
-      margin-bottom: 12px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      font-family: sans-serif;
-    }
-    .event-date {
-      font-size: 1.1em;
-      font-weight: bold;
-      margin-bottom: 4px;
-    }
-    .event-lieu {
-      margin-bottom: 4px;
-    }
-    .event-salle {
-      font-size: 1.1em;
-      font-weight: bold;
-      margin-bottom: 4px;
-    }
-    .event-type {
-      display: inline-block;
-      background: #e0e0e0;
-      padding: 2px 8px;
-      border-radius: 6px;
-      font-size: 0.85em;
-      margin-top: 6px;
-    }
-  </style>
+              <!-- feuille de style -->
+              <style>
+                body {
+                  background-color: #ffe6f2;
+                }
+                #liste-sardanes {
+                  list-style: none;
+                  padding: 0;
+                }
+                .event-card {
+                  background: #f7f7f7;
+                  border-radius: 8px;
+                  padding: 12px 16px;
+                  margin-bottom: 12px;
+                  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                  font-family: sans-serif;
+                }
+                .event-date {
+                  font-size: 1.1em;
+                  font-weight: bold;
+                  margin-bottom: 4px;
+                }
+                .event-lieu {
+                  margin-bottom: 4px;
+                }
+                .event-salle {
+                  font-size: 1.1em;
+                  font-weight: bold;
+                  margin-bottom: 4px;
+                }
+                .event-type {
+                  display: inline-block;
+                  background: #e0e0e0;
+                  padding: 2px 8px;
+                  border-radius: 6px;
+                  font-size: 0.85em;
+                  margin-top: 6px;
+                }
+                            .grid { 
+                              display: grid;
+                              grid-template-columns: repeat(3, 1fr); 
+                              gap: 15px; padding: 10px; 
+                            }
+              </style>
 </head>
 <body>
 
@@ -73,7 +79,7 @@
               </table>
   
 <h2>Prochains evenements</h2>
-<ul id="liste-sardanes"></ul>
+<div id="liste-sardanes" class="grid"></div>
 <script>
 console.log("VERSION 3 - Script corrige");
 // Convertit DD-MM-YYYY -> objet Date()
@@ -111,7 +117,7 @@ fetch("./events.json?nocache=" + Date.now())
     data.sort((a, b) => parseDate(a.date) - parseDate(b.date));
     // Affichage
     data.forEach(event => {
-      const item = document.createElement("li");
+      const item = document.createElement("div");
       item.className = "event-card";
       const dateObj = parseDate(event.date);
       item.innerHTML = `
