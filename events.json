@@ -1,27 +1,4 @@
-[
-      { 
-  "jour": "Samedi",
-  "date": "24-01-2026", 
-  "heure": "15h", 
-  "lieu": " CLAIRA", 
-  "salle" : "non communiqué",
-  "cobla": "Principal del Rossello", 
-  "type": "Ballada" ,
-  "tarif": "non communiqué"
-       
-},
-    { 
-         "jour": "Dimanche",
-  "date": "25-01-2026", 
-  "heure": "11 / 15h30", 
-  "lieu": " St JEAN PLA DE CORTS ", 
-  "salle" : "non communiqué",
-  "cobla": "Principal del Rossello", 
-  "type": "non communiqué" ,
-  "tarif": "non communiqué"
-         
-},
-     
+[      
    { 
         "jour": "Dimanche",
   "date": "01-02-2026", 
