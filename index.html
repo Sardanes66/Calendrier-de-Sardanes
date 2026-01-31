@@ -8,6 +8,21 @@
                 body {
                   background-color: #ffe6f2;
                 }
+                /* ... ton CSS ... */ 
+                .grid { 
+                  display: grid; 
+                  grid-template-columns: repeat(3, 1fr); 
+                  gap: 15px; padding: 10px; 
+                    } 
+                @media (max-width: 900px) {
+                  .grid { 
+                        grid-template-columns: repeat(2, 1fr);
+                        } 
+                } @media (max-width: 600px) { 
+                  .grid { grid-template-columns: 1fr;
+                        } 
+                } 
+              </style>
                 #liste-sardanes {
                   list-style: none;
                   padding: 0;
