@@ -42,10 +42,22 @@
                   margin-top: 6px;
                 }
                             .grid { 
-                              display: grid;
+                              display: grid; 
                               grid-template-columns: repeat(3, 1fr); 
-                              gap: 15px; padding: 10px; 
-                            }
+                              gap: 15px; 
+                              padding: 10px; 
+                            } 
+                /* Tablettes et écrans moyens → 2 colonnes */
+                @media (max-width: 900px) {
+                  .grid { 
+                    grid-template-columns: repeat(2, 1fr);
+                  } 
+                } 
+                /* Téléphones → 1 colonne */ 
+                @media (max-width: 600px) { 
+                  .grid { grid-template-columns: 1fr;
+                        }
+                }
               </style>
 </head>
 <body>
