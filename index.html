@@ -94,12 +94,13 @@ function formatDateFR(dateObj) {
     return jours[dateObj.getDay()]; }
 // URLs des cobles
 const coblesURL = {
-  "Tres Vents": "https://www.coblatresvents.cat",
+  "Tres Vents": "https://tresvents.com/presse_articles.html?utm_source=copilot.com",
   "Mil.lenaria": "https://www.coblamillenaria.cat",
   "Ciutat de Girona": "https://www.coblagirona.cat",
-  "Sol de Banyuls": "",
-  "Sol de Banuyls": "",
-  "Principal del Rossello": ""
+  "Sol de Banyuls": "https://coblasoldebanyuls.wixsite.com/coblasdb",
+  "Nova Germanor": "https://coblanovagermanor.over-blog.com/",
+  "Principal del Rossello": "http://www.principaldelrossello.com/",
+  "Les Casenoves": "https://www.facebook.com/coblalescasenoves/",
 };
 // Chargement du JSON
 fetch("./events.json?nocache=" + Date.now())
