@@ -1,48 +1,5 @@
 [      
-   { 
-        "jour": "Dimanche",
-  "date": "01-02-2026", 
-  "heure": "matin", 
-  "lieu": " Pezilla De La Rivière", 
-  "salle" : "non communiqué",
-  "cobla": "Mil.lenaria", 
-  "type": "ballada" ,
-  "tarif": "non communiqué"
-    
-},
-  { 
-       "jour": "Dimanche",
-  "date": "01-02-2026", 
-  "heure": "15h00", 
-  "lieu": "Cabestany", 
-  "salle" : "Centre Culturel",
-  "cobla": "Mil.lenaria et Casenoves", 
-  "type": "Aplec" ,
-  "tarif": "7€"
-       
-},
-     { 
-          "jour": "Dimanche",
-  "date": "01-02-2026", 
-  "heure": "15h", 
-  "lieu": " Reynés ", 
-  "salle" : "non communiqué",
-  "cobla": "Sol de Banuyls", 
-  "type": "Ballada" ,
-  "tarif": "non communiqué"
-         
-},
-   { 
-        "jour": "Dimanche",
-  "date": "01-02-2026", 
-  "heure": "10h / 15h", 
-  "lieu": " ARLES SUR TECH ", 
-  "salle" : "non communiqué",
-  "cobla": "Principal del Rossello", 
-  "type": "non communiqué" ,
-  "tarif": "non communiqué"
-       
-},
+   
     { 
          "jour": "Dimanche",
   "date": "08-02-2026", 
