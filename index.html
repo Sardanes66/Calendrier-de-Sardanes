@@ -69,69 +69,126 @@
 <div style="display:flex; gap:20px; margin-bottom:20px;">
   <img src="sardana.JPG" alt="Image 2" style="height:120px; border-radius:8px;">
 </div>
-            
+ <div style="text-align:right; margin:10px;"> 
+   <button onclick="setLang('fr')">Français</button> 
+   <button onclick="setLang('cat')">Català</button> 
+ </div>           
   
 <h2>Prochains evenements</h2>
 <div id="liste-sardanes" class="grid"></div>
-<script>
-console.log("VERSION 3 - Script corrige");
-// Convertit DD-MM-YYYY -> objet Date()
-function parseDate(d) {
-  const [jour, mois, annee] = d.split("-");
-  return new Date(`${annee}-${mois}-${jour}`);
-}
-// Affichage FR
-function formatDateFR(dateObj) {
-  return dateObj.toLocaleDateString("fr-FR", {
-    day: "numeric",
-    month: "long",
-    year: "numeric"
-  });
-}
-  // Jour de la semaine FR 
+<script> 
+  const i18n = {
+    fr: { 
+      titre: "Bienvenue sur le Calendrier des Sardanes du 66", 
+      prochains: "Prochains événements", 
+      jour: "jour", 
+      date: "date", 
+      lieu: "lieu", 
+      salle: "salle", 
+      cobla: "Cobla",
+      type: "type",
+      tarif: "Tarif",
+      visitesAuj: "Nombre de visites aujourd'hui", 
+      visitesTot: "Visites totales" 
+    }, 
+    cat: {
+      titre: "Benvinguts al Calendari de Sardanes del 66", 
+      prochains: "Propers esdeveniments",
+      jour: "dia", date: "data", 
+      lieu: "lloc", 
+      salle: "sala", 
+      cobla: "Cobla", 
+      type: "tipus", 
+      tarif: "Preu", 
+      visitesAuj: "Nombre de visites avui",
+      visitesTot: "Visites totals"
+           }
+  }; 
+  let currentLang = "fr"; 
+  let eventsData = []; // <-- placé au bon endroit 
+  function setLang(lang) { 
+    currentLang = lang; 
+    renderEvents(); 
+    updateStaticTexts(); 
+              } 
+  // ----------------------
+  // Fonctions utilitaires 
+  // ---------------------- 
+  function parseDate(d) {
+    const [jour, mois, annee] = d.split("-");
+    return new Date(`${annee}-${mois}-${jour}`);
+  } 
+  function formatDateFR(dateObj) { 
+    return dateObj.toLocaleDateString("fr-FR", { 
+      day: "numeric", 
+      month: "long",
+      year: "numeric" 
+                });
+     }
   function getJourSemaineFR(dateObj) { 
     const jours = ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"]; 
-    return jours[dateObj.getDay()]; }
-// URLs des cobles
-const coblesURL = {
-  "Tres Vents": "https://tresvents.com/presse_articles.html?utm_source=copilot.com",
-  "Mil.lenaria": "https://www.coblamil-lenaria.fr/",
-  "Ciutat de Girona": "https://www.coblagirona.cat",
-  "Sol de Banyuls": "https://coblasoldebanyuls.wixsite.com/coblasdb",
-  "Nova Germanor": "https://coblanovagermanor.over-blog.com/",
-  "Principal del Rossello": "http://www.principaldelrossello.com/",
-  "Les Casenoves": "https://www.facebook.com/coblalescasenoves/",
-};
-// Chargement du JSON
-fetch("./events.json?nocache=" + Date.now())
-  .then(response => response.json())
-  .then(data => {
-    const liste = document.getElementById("liste-sardanes");
-    // Tri correct
-    data.sort((a, b) => parseDate(a.date) - parseDate(b.date));
-    // Affichage
-    data.forEach(event => {
-      const item = document.createElement("div");
-      item.className = "event-card";
-      const dateObj = parseDate(event.date);
+    return jours[dateObj.getDay()];
+         } 
+  const coblesURL = {
+    "Tres Vents": "https://tresvents.com/presse_articles.html?utm_source=copilot.com", 
+    "Mil.lenaria": "https://www.coblamil-lenaria.fr/", 
+    "Ciutat de Girona": "https://www.coblagirona.cat", 
+    "Sol de Banyuls": "https://coblasoldebanyuls.wixsite.com/coblasdb", 
+    "Nova Germanor": "https://coblanovagermanor.over-blog.com/", 
+    "Principal del Rossello": "http://www.principaldelrossello.com/", 
+    "Les Casenoves": "https://www.facebook.com/coblalescasenoves/", 
+         }; 
+  // ---------------------- 
+  // Mise à jour des textes statiques 
+  // ---------------------- 
+  function updateStaticTexts() {
+    document.querySelector("h1").innerText = i18n[currentLang].titre; 
+    document.querySelector("h2").innerText = i18n[currentLang].prochains; 
+    const spans = document.querySelectorAll("#visits-today, #visits-total");
+    if (spans.length === 2) { 
+                     spans[0].previousSibling.textContent = i18n[currentLang].visitesAuj + " : "; 
+                     spans[1].previousSibling.textContent = i18n[currentLang].visitesTot + " : ";
+                          } 
+                     } 
+  // ---------------------- 
+  // Affichage des événements 
+  // ---------------------- 
+  function renderEvents() { 
+    const liste = document.getElementById("liste-sardanes"); 
+    liste.innerHTML = "";
+    eventsData.forEach(event => { 
+                             const dateObj = parseDate(event.date); 
+                              const item = document.createElement("div"); 
+                            item.className = "event-card"; 
       item.innerHTML = `
-         <div class="event-jour"> jour : ${getJourSemaineFR(dateObj)}</div>
-        <div class="event-date"> date : ${formatDateFR(dateObj)} - ${event.heure}</div>
-        <div class="event-lieu"> lieu : <strong>${event.lieu}</strong></div>
-        <div class="event-salle"> salle : ${event.salle}</div>
-        <div class="event-cobla"> Cobla :
-          ${coblesURL[event.cobla]
-            ? `<a href="${coblesURL[event.cobla]}" target="_blank">${event.cobla}</a>`
-            : event.cobla}
-        </div>
-        <div class="event-type"> type : ${event.type}</div>
-        <div class="event-tarif"> Tarif : ${event.tarif}</div>
-      `;
-      liste.appendChild(item);
-    });
-  })
-  .catch(error => console.error("Erreur de chargement :", error));
-</script>
+                 <div class="event-jour">${i18n[currentLang].jour} : ${getJourSemaineFR(dateObj)}</div> 
+                 <div class="event-date">${i18n[currentLang].date} : ${formatDateFR(dateObj)} - ${event.heure}</div>
+                 <div class="event-lieu">${i18n[currentLang].lieu} : <strong>${event.lieu}</strong></div> 
+                 <div class="event-salle">${i18n[currentLang].salle} : ${event.salle}</div> 
+                 <div class="event-cobla">${i18n[currentLang].cobla} :
+                 ${coblesURL[event.cobla] 
+                   ? `<a href="${coblesURL[event.cobla]}" target="_blank">${event.cobla}</a>` 
+                   : event.cobla} 
+                   </div> 
+                   <div class="event-type">${i18n[currentLang].type} : ${event.type}</div> 
+                   <div class="event-tarif">${i18n[currentLang].tarif} : ${event.tarif}</div> 
+                   `; 
+      
+      liste.appendChild(item); 
+                        }); 
+                    }
+  //  ---------------------- 
+  // Chargement du JSON
+  // ---------------------- 
+  fetch("./events.json?nocache=" + Date.now())
+            .then(response => response.json()) 
+            .then(data => { 
+                           eventsData = data.sort((a, b) => parseDate(a.date) - parseDate(b.date)); 
+                            renderEvents();
+                              updateStaticTexts(); 
+                         }) 
+          .catch(error => console.error("Erreur de chargement :", error));  
+    </script>
 <footer style="margin-top:40px; padding:15px; background:#f2d9e6; border-radius:8px; text-align:center;
 font-family:sans-serif; color:#333;">
   Pour me contacter :
