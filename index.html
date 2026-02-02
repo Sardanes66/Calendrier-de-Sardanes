@@ -144,6 +144,7 @@
   function updateStaticTexts() {
     document.querySelector("h1").innerText = i18n[currentLang].titre; 
     document.querySelector("h2").innerText = i18n[currentLang].prochains; 
+    
     const spans = document.querySelectorAll("#visits-today, #visits-total");
     if (spans.length === 2) { 
                      spans[0].previousSibling.textContent = i18n[currentLang].visitesAuj + " : "; 
@@ -198,7 +199,8 @@ color:#333;">cuscullets@sfr.fr</a>
     Nombre de visites aujourd'hui : <span id="visits-today"></span><br>
     Visites totales : <span id="visits-total"></span>
   </div>
-<script>
+</footer>
+  <script>
   const TOTAL_KEY = "visites_total";
   const DAILY_KEY = "visites_" + new Date().toISOString().slice(0,10);
   let total = localStorage.getItem(TOTAL_KEY);
@@ -212,6 +214,5 @@ color:#333;">cuscullets@sfr.fr</a>
   document.getElementById("visits-total").innerText = total;
   document.getElementById("visits-today").innerText = daily;
 </script>
-</footer>
 </body>
 </html>
