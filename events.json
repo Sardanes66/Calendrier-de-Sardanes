@@ -82,6 +82,16 @@
   "type": "SARDANES I BALLS" ,
   "tarif": "non communiqué"
 },
+    { 
+          "jour": "Samedi",
+  "date": "01-08-2026", 
+  "heure": "a définir", 
+  "lieu": " RIA ", 
+  "salle" : "en plein air",
+  "cobla": "Mil.lenaria", 
+  "type": "Ballada" ,
+  "tarif": "entrée libre + tombola"
+},
       { 
            "jour": "Dimanche",
   "date": "02-08-2026", 
