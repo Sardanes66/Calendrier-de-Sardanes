@@ -1,25 +1,23 @@
 [      
    
-   
-     { 
-          "jour": "Dimanche-Diumenge",
-  "date": "15-02-2026", 
-  "heure": "15h", 
-  "lieu": " Rivesaltes ", 
-  "salle" : "non communiqué-no comunicat",
-  "cobla": "Sol de Banuyls", 
-  "type": "Ballada" ,
-  "tarif": "non communiqué-no comunicat"
-          
-},
   { 
        "jour": "Dimanche-Diumenge",
   "date": "22-02-2026", 
-  "heure": "15h", 
+  "heure": "15h30", 
   "lieu": " St FELIU D'AVALL ", 
-  "salle" : "non communiqué",
+  "salle" : "polivalente",
   "cobla": "Principal del Rossello", 
-  "type": "non communiqué" ,
+  "type": "ballada" ,
+  "tarif": "non communiqué"
+      
+},
+        "jour": "Dimanche-Diumenge",
+  "date": "28-02-2026", 
+  "heure": "15h", 
+  "lieu": " Cotlliure ", 
+  "salle" : "place du 18 juin",
+  "cobla": "Principal del Rossello", 
+  "type": "ballada" ,
   "tarif": "non communiqué"
       
 },
