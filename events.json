@@ -2,34 +2,45 @@
    
   { 
        "jour": "Dimanche-Diumenge",
-  "date": "22-02-2026", 
-  "heure": "15h30", 
-  "lieu": " St FELIU D'AVALL ", 
-  "salle" : "polivalente",
-  "cobla": "Principal del Rossello", 
-  "type": "ballada" ,
-  "tarif": "non communiqué"
+  "date": "08-03-2026", 
+  "heure": "15h00", 
+  "lieu": " Perpignan ", 
+  "salle" : "pgymnase Aristide Maillol",
+  "cobla": "Les Albères", 
+  "type": "ballada - 9 Sardanes de 7 tirades" ,
+  "tarif": "7€"
       
 },
  {        "jour": "Dimanche-Diumenge",
-  "date": "28-02-2026", 
+  "date": "08-03-2026", 
   "heure": "15h", 
-  "lieu": " Cotlliure ", 
-  "salle" : "place du 18 juin",
-  "cobla": "Sol de Banyuls", 
+  "lieu": " St Genis Des Fontaines ", 
+  "salle" : "Espace de La Prade",
+  "cobla": "Nova Germanor", 
   "type": "ballada" ,
-  "tarif": "non communiqué"
+  "tarif": "6€"
       
+},
+   { 
+      "jour": "Samedi-Disabte",
+  "date": "28-03-2026", 
+  "heure": "16h00", 
+  "lieu": " Colliure", 
+  "salle" : "Non communiqué",
+  "cobla": "Tres Vents", 
+  "type": "Non communiqué" ,
+  "tarif": "Non communiqué"
+     
 },
  { 
       "jour": "Dimanche-Diumenge",
-  "date": "01-03-2026", 
-  "heure": "10h / 15h", 
-  "lieu": " St LAURENT DE CERDANS ", 
-  "salle" : "non communiqué",
-  "cobla": "Principal del Rossello", 
-  "type": "non communiqué" ,
-  "tarif": "non communiqué"
+  "date": "29-03-2026", 
+  "heure": "15h30", 
+  "lieu": " St Estève", 
+  "salle" : "St Mamet",
+  "cobla": "Sol De Banuyls", 
+  "type": "Ballada - 7 Sardanes de 10 tirades" ,
+  "tarif": "6€"
      
 },
 { 
