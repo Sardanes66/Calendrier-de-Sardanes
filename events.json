@@ -1,57 +1,15 @@
 [      
    
-  { 
-       "jour": "Dimanche-Diumenge",
-  "date": "08-03-2026", 
-  "heure": "15h00", 
-  "lieu": " Perpignan ", 
-  "salle" : "pgymnase Aristide Maillol",
-  "cobla": "Les Albères", 
-  "type": "ballada - 9 Sardanes de 7 tirades" ,
-  "tarif": "7€"
-      
-},
- {        "jour": "Dimanche-Diumenge",
-  "date": "08-03-2026", 
-  "heure": "15h", 
-  "lieu": " St Genis Des Fontaines ", 
-  "salle" : "Espace de La Prade",
-  "cobla": "Nova Germanor", 
-  "type": "ballada" ,
-  "tarif": "6€"
-      
-},
-   { 
-      "jour": "Samedi-Disabte",
-  "date": "28-03-2026", 
-  "heure": "16h00", 
-  "lieu": " Colliure", 
-  "salle" : "Non communiqué",
-  "cobla": "Tres Vents", 
-  "type": "Non communiqué" ,
-  "tarif": "Non communiqué"
-     
-},
- { 
-      "jour": "Dimanche-Diumenge",
-  "date": "29-03-2026", 
-  "heure": "15h30", 
-  "lieu": " St Estève", 
-  "salle" : "St Mamet",
-  "cobla": "Sol De Banuyls", 
-  "type": "Ballada - 7 Sardanes de 10 tirades" ,
-  "tarif": "6€"
-     
-},
+
 { 
-     "jour": "Jeudi",
-  "date": "05-04-2026", 
+     "jour": "Dimanche/diumenge",
+  "date": "12-04-2026", 
   "heure": "15h30", 
-  "lieu": " ST LAURENT DE LA SALANQUE ", 
-  "salle" : "non communiqué",
-  "cobla": "Tres vents", 
-  "type": "non communiqué" ,
-  "tarif": "non communiqué"
+  "lieu": " Thuir/Tuïr", 
+  "salle" : "Jeantet Violet",
+  "cobla": "Els Casenoves", 
+  "type": "Ballada - 7 tirades" ,
+  "tarif": "6€"
 },
      { 
           "jour": "Dimanche-Diumenge",
