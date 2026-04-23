@@ -1,33 +1,24 @@
 [      
    
+
 { 
-     "jour": "Dimanche/diumenge",
-  "date": "12-04-2026", 
-  "heure": "16h00", 
-  "lieu": " Cospron", 
-  "salle" : "Non communiqué",
-  "cobla": "La Principal Del Rossello", 
-  "type": "Ballada" ,
-  "tarif": "Non communiqué"
-},
-{ 
-     "jour": "Dimanche/diumenge",
-  "date": "12-04-2026", 
-  "heure": "15h30", 
-  "lieu": " Thuir/Tuïr", 
-  "salle" : "Jeantet Violet",
-  "cobla": "Els Casenoves", 
-  "type": "Ballada - 7 tirades" ,
-  "tarif": "6€"
+     "jour": "Jeudi/dijous",
+  "date": "23-04-2026", 
+  "heure": "15h45 à 20h00", 
+  "lieu": " Perpignan/Perpinya", 
+  "salle" : "Méga Castillet",
+  "cobla": "Nova Germanor", 
+  "type":  "Sant Jordi Ballada" ,
+  "tarif": "gratuit"
 },
    { 
-     "jour": "Mercredi/dimecres",
-  "date": "15-04-2026", 
-  "heure": "20h30", 
-  "lieu": " Pézilla-la-Rivière", 
-  "salle" : "Centre Culturel",
+     "jour": "Samedi/disabte",
+  "date": "25-04-2026", 
+  "heure": "16h30", 
+  "lieu": " Le Barcarès-Village", 
+  "salle" : "Place de la République",
   "cobla": "cobla jova du conservatoire de Perpignan", 
-  "type": "Bal trad / sardanes" ,
+  "type": "Ballada 9 sardanes de 7 tirades" ,
   "tarif": "Non communiqué"
 },
      { 
