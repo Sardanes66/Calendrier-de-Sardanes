@@ -14,11 +14,31 @@
    { 
      "jour": "Samedi/disabte",
   "date": "25-04-2026", 
-  "heure": "16h30", 
-  "lieu": " Le Barcarès-Village", 
-  "salle" : "Place de la République",
-  "cobla": "cobla jova du conservatoire de Perpignan", 
-  "type": "Ballada 9 sardanes de 7 tirades" ,
+    "heure": "15h30", 
+  "lieu": " Perpignan/Perpinya", 
+  "salle" : "Méga Castillet",
+  "cobla": "Nova Germanor", 
+  "type":  "Sant Jordi Ballada" ,
+  "tarif": "gratuit"
+  },
+   { 
+     "jour": "Dimanche/diumenge",
+  "date": "26-04-2026", 
+  "heure": "16h30",  
+   "lieu": " Saint Cyprien", 
+  "salle" : "Jardin des plantes les Capellans",
+  "cobla": "Les Casenoves", 
+  "type": "Ballada " ,
+  "tarif": "Non communiqué"
+},
+    { 
+     "jour": "Dimanche/diumenge",
+  "date": "26-04-2026", 
+  "heure": "10h à 13h",  
+   "lieu": " Saint Laurent de la Salanque", 
+  "salle" : "Place De Gaulle",
+  "cobla": "Sol de Banuyls", 
+  "type": "Ballada + Sant Jordi " ,
   "tarif": "Non communiqué"
 },
      { 
