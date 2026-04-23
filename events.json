@@ -4,7 +4,7 @@
 { 
      "jour": "Jeudi/dijous",
   "date": "23-04-2026", 
-  "heure": "15h45 à 20h00", 
+  "heure": "18h30 à 20h00", 
   "lieu": " Perpignan/Perpinya", 
   "salle" : "Méga Castillet",
   "cobla": "Nova Germanor", 
@@ -14,17 +14,17 @@
    { 
      "jour": "Samedi/disabte",
   "date": "25-04-2026", 
-    "heure": "15h30", 
-  "lieu": " Perpignan/Perpinya", 
+    "heure": "16h30", 
+  "lieu": " Le Barcarès Village", 
   "salle" : "Méga Castillet",
   "cobla": "Nova Germanor", 
-  "type":  "Sant Jordi Ballada" ,
+  "type":  "Ballada 9 sardanes de 7 tirades" ,
   "tarif": "gratuit"
   },
    { 
      "jour": "Dimanche/diumenge",
   "date": "26-04-2026", 
-  "heure": "16h30",  
+  "heure": "15h30",  
    "lieu": " Saint Cyprien", 
   "salle" : "Jardin des plantes les Capellans",
   "cobla": "Les Casenoves", 
